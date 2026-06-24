@@ -193,17 +193,17 @@
             <p class="contact-intro">Interested in research collaboration, academic discussion, or professional opportunities? I'd love to hear from you!</p>
             
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-link">
+                <a href="#" class="contact-link" onclick="revealemail(event)">
                     <span class="icon">✉</span>
                     Email
+                </a>
+                <a href="https://www.linkedin.com/in/lisanne-bogaard/" target="_blank" class="contact-link">
+                    <span class="icon">💼</span>
+                    LinkedIn
                 </a>
                 <a href="https://github.com/bluesootsprite" class="contact-link">
                     <span class="icon">⚙</span>
                     GitHub
-                </a>
-                <a href="https://linkedin.com" class="contact-link">
-                    <span class="icon">💼</span>
-                    LinkedIn
                 </a>
                 <a href="https://orcid.org" class="contact-link">
                     <span class="icon">🔬</span>
@@ -219,5 +219,13 @@
             <p>&copy; 2026 bluesootsprite. PhD in Cognitive & Brain Sciences.</p>
         </div>
     </footer>
+
+    <script>
+        function revealemail(event) {
+            event.preventDefault();
+            const email = ['l', 'g', '.', 'b', 'o', 'g', 'a', 'a', 'r', 'd', '@', 'g', 'm', 'a', 'i', 'l', '.', 'c', 'o', 'm'].join('');
+            window.location.href = 'mailto:' + email;
+        }
+    </script>
 </body>
 </html>
